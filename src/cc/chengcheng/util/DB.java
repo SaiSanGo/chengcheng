@@ -12,7 +12,9 @@ public class DB {
 		Connection conn = null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/chengchengdb", "root", "ycs9801");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/chengchengdb",
+					"root", "ycs9801");
+			
 		} catch (ClassNotFoundException e) {
 			System.out.println("ClassNotFoundExption");
 			e.printStackTrace();

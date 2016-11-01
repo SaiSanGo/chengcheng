@@ -6,8 +6,8 @@
 <struts>
 	<constant name="struts.devMode" value="true" />
 	<package name="default" extends="struts-default" namespace="/">
-		<action name="searchRoom" class="cc.chengcheng.action" method="getRooms">
-			<result>/index.jsp</result>
+		<action name="searchRoom" class="cc.chengcheng.action.RoomAction" method="emputyRoomList">
+			<result>/emptyRooms.jsp</result>
 		</action>
 	</package>
 	

@@ -17,7 +17,7 @@
 <body>
 <center>
 <p>空闲教室列表</p>
-<table border="1" bgcolor="green">
+<table border="1">
 <s:iterator value="rooms" var="room">
 	<tr>
 	<td><s:property value="#room.roomId" /></td>
