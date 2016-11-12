@@ -36,4 +36,20 @@ public class RoomService {
 		
 		return rooms;
 	}
+	
+	public boolean orderRoom(int roomId, String t) {
+		Connection conn = DB.createConn();
+		String sql = "update rooms set " + t + "=0 where roomId=" + roomId;
+		PreparedStatement ps = DB.prepare(conn, sql);
+		try {
+			ps.executeUpdate();
+		} catch (SQLException e) {
+
+			e.printStackTrace();
+			return false;
+		}
+		DB.close(ps);
+		DB.close(conn);
+		return true;
+	}
 }

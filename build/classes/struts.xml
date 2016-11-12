@@ -9,6 +9,12 @@
 		<action name="searchRoom" class="cc.chengcheng.action.RoomAction" method="emputyRoomList">
 			<result>/emptyRooms.jsp</result>
 		</action>
+		
+		<action name="order" class="cc.chengcheng.action.RoomAction" method="orderRoom">
+			
+		</action>
+		
+		<action name="orderList" class="cc.chengcheng.action.RoomAction" method="orderList" />
 	</package>
 	
 </struts>
